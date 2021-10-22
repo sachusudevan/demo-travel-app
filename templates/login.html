@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="http://brandio.io/envato/iofrm/html/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://brandio.io/envato/iofrm/html/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://brandio.io/envato/iofrm/html/css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="http://brandio.io/envato/iofrm/html/css/iofrm-theme18.css">
+</head>
+<body>
+    <div class="form-body without-side">
+        
+        <div class="row">
+            <div class="img-holder">
+                <div class="bg"></div>
+                <div class="info-holder">
+                    <img src="http://brandio.io/envato/iofrm/html/images/graphic3.svg" alt="">
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Sign In</h3>
+                        <p style="font-size:14px;font-style:italic;text-align:center;color:red;">
+                            {% for message in messages %}
+                                {{message}}
+                            {% endfor %}
+                        </p>
+                        <form method="post" action="login">
+                            {% csrf_token %}
+                            <input class="form-control" type="text" name="username" placeholder="Username" required>
+                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                            <div class="form-button">
+                                <button id="submit" type="submit" class="ibtn">Sign In</button>
+                            </div>
+                        </form>
+                        
+                        <div class="other-links">
+                        
+                        </div>
+                        {% comment %} <div class="page-links">
+                            <a href="login18.html">Login to account</a>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="http://brandio.io/envato/iofrm/html/js/jquery.min.js"></script>
+<script src="http://brandio.io/envato/iofrm/html/js/popper.min.js"></script>
+<script src="http://brandio.io/envato/iofrm/html/js/bootstrap.min.js"></script>
+<script src="http://brandio.io/envato/iofrm/html/js/main.js"></script>
+</body>
+</html>
