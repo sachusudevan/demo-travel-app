@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'travello.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'travello',
-        'USER': 'root',
-        'PASSWORD': '',
+        'NAME': 'sachu104.mysql.pythonanywhere-services.com',
+        'USER': 'sachu104',
+        'PASSWORD': 'demo_travel_root',
         'PORT':'3306',
     }
 }
